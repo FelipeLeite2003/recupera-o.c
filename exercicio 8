@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int N, A, i;
+
+    scanf("%d", &N);
+
+    for (i = 0; i < N; i++) {
+        scanf("%d", &A);
+
+        int ano_correspondente = 2015 - A;
+
+        if (ano_correspondente <= 0) {
+            printf("%d A.C.\n", -ano_correspondente + 1);
+        } else {
+            printf("%d D.C.\n", ano_correspondente);
+        }
+    }
+
+    return 0;
+}
