@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int numcasos, numtermos, resultado;
+
+    scanf("%d", &numcasos);
+
+    for (int i = 0; i < numcasos; i++) {
+        scanf("%d", &numtermos);
+        resultado = 0;
+
+        for (int j = 0; j < numtermos; j++) {
+            if (j % 2 == 0)
+                resultado++;
+            else
+                resultado--;
+        }
+
+        printf("%d\n", resultado);
+    }
+
+    return 0;
+}
